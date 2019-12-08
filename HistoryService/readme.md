@@ -16,7 +16,11 @@ docker build -t historyws .
 
 Run the container
 ```
+# with console
 docker run -it --rm -p 8080:80 --name historyws historyws
+
+# without console
+docker run --rm --detach -p 8085:80 --name historyws5 historyws
 ```
 
 Call Webservice method
